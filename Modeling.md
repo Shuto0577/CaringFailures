@@ -1,6 +1,6 @@
 # 化け物（StillHuman）のモデリング工程
 
-[← READMEに戻る](../README.md)
+[← READMEに戻る](README.md)
 
 ## 制作工程
 
@@ -10,7 +10,8 @@
 
 2Dデザインをもとに、正面と側面の下絵を描き起こし、Blenderに配置してモデリングの基準にしました。
 
-<!-- Still_Human_front.PNG / Still_Human_side.PNG を並べて配置 -->
+<img width="500" height="250" alt="Still_Human_front" src="https://github.com/user-attachments/assets/0c01baec-0111-40fc-8e17-7c666fa68452" /> 
+<img width="500" height="250" alt="Still_Human_side" src="https://github.com/user-attachments/assets/d7b7b259-c56d-4812-9cbe-137bad72358d" />
 
 ### 2. モデリング
 
@@ -18,37 +19,37 @@
 
 - ベースメッシュ（サブディビジョン適用前）：頂点 2,077 / 面 2,102 / 三角面 4,150
 
-<!-- Still_Human_1_UnSubdivide のワイヤーフレーム画像を配置 -->
+<img width="800" height="500" alt="1" src="https://github.com/user-attachments/assets/90f10f01-aa38-47c5-b96f-b951c2a55fce" />
 
-### 3. リギング・ウェイトペイント
-
-ボーンを配置し、ウェイトペイントで各ボーンが動かすメッシュの範囲を調整しました。サブディビジョンとミラーは、ウェイトペイントが終わってから適用しています。
-
-<!-- Still_Human_3 のウェイトペイント画像を配置 -->
-
-### 4. UV展開・テクスチャ
+### 3. UV展開・テクスチャ
 
 UV展開を行い、ベースカラー、ノーマルマップ、ラフネスマップを作成しました。
 
-<!-- Still_Human_4 のUV展開画像を配置 -->
+<img width="800" height="500" alt="2" src="https://github.com/user-attachments/assets/21516898-e65d-4624-bada-4d422c730c94" />
+
+### 4. リギング・ウェイトペイント
+
+ボーンを配置し、ウェイトペイントで各ボーンが動かすメッシュの範囲を調整しました。ここで、すでにサブディビジョンとミラーは適用後だっため、適用するのが早すぎたと反省しています。
+
+<img width="800" height="500" alt="3" src="https://github.com/user-attachments/assets/51299b25-5d61-4b21-9fc4-9d97bed977f6" />
 
 ### 5. ポーズ・アニメーション
 
 IKとFKを切り替えられるリグを組み、待機モーションなどのアニメーションを作成しました。
 
-<!-- Still_Human_5 のポーズモード画像を配置 -->
+<img width="800" height="500" alt="4" src="https://github.com/user-attachments/assets/831c80f4-d826-4b20-bbe6-9a26840d7809" />
 
 ### 6. Unityへの組み込み
 
 FBXとして書き出し、Unityに取り込んでゲーム内で動かしています。
 
-<!-- ゲーム内のスクリーンショットを配置 -->
+<img width="800" height="500" alt="5" src="https://github.com/user-attachments/assets/508dab6f-054c-4046-b0e6-fca5a32cd9ce" />
 
 ## モデリングで得た知見
 
 初めて一体のキャラクターを最後まで作り切る中で、失敗から学んだことをまとめています。
 
-- **四角ポリゴンで構成する**：三角面や多角面が混ざると、後の工程で手戻りが増える。
+- **四角ポリゴンで構成する**：三角面や多角面が混ざると、トポロジーが崩れやすく、後の工程で手戻りが増える。
 - **工程が変わる前にファイルを分ける**：モデリングからウェイトペイント、マテリアル作成など、作業が大きく変わる直前と、モディファイアーを適用する前は、必ず別ファイルとして保存する。適用後の結果は予測しきれないため、戻れる地点を残しておく。
 - **サブディビジョンはウェイトペイントの後に適用する**：先に適用すると頂点数が増え、ウェイトペイントの手間が大幅に増える。
 - **ミラーもウェイトペイントの後に適用する**：適用する順番は、ミラー、サブディビジョンの順にしないとメッシュが崩れやすい。
