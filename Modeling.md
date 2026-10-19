@@ -10,8 +10,9 @@
 
 2Dデザインをもとに、正面と側面の下絵を描き起こし、Blenderに配置してモデリングの基準にしました。
 
-<img width="500" height="250" alt="Still_Human_front" src="https://github.com/user-attachments/assets/0c01baec-0111-40fc-8e17-7c666fa68452" /> 
-<img width="500" height="250" alt="Still_Human_side" src="https://github.com/user-attachments/assets/d7b7b259-c56d-4812-9cbe-137bad72358d" />
+| 正面 | 横 |
+| --- | --- |
+|<img width="500" height="250" alt="Still_Human_front" src="https://github.com/user-attachments/assets/0c01baec-0111-40fc-8e17-7c666fa68452" /> |<img width="500" height="250" alt="Still_Human_side" src="https://github.com/user-attachments/assets/d7b7b259-c56d-4812-9cbe-137bad72358d" /> |
 
 ### 2. モデリング
 
