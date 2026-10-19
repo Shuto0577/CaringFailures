@@ -2,7 +2,7 @@
 
 トラウマ級の見た目をした化け物に、**逃げるのではなく自ら近づいてお世話をする**3Dサバイバルホラー。
 
-[![CaringFailures プレイ動画](https://img.youtube.com/vi/rKZcAX_y5iw/maxresdefault.jpg)](https://youtu.be/rKZcAX_y5iw)
+[<img width="450" alt="CaringFailures プレイ動画" src="https://img.youtube.com/vi/rKZcAX_y5iw/maxresdefault.jpg" />](https://youtu.be/rKZcAX_y5iw)
 
 ※画像をクリックするとYouTubeでプレイ動画（約2分20秒）が再生されます。
 
